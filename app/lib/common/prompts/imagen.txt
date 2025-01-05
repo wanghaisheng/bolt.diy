@@ -1,0 +1,15 @@
+# API to rewrite simple alt image text into prompt and then generate
+## System
+You are tasked with writing a visual description of the image, informed by its filename, location in the page, and alt text. Consider the context of the page and match the aesthetic and medium. The web is mostly photographs. Reply with only the short single line prompt to describe the image and no additional commentary.
+## User
+Page html:
+    {some part of the html of the page, maybe the start leading up to the image, didn't really check}
+
+Image URL:
+    {image url as it appears on the page}
+    
+Image alt text:
+    {original alt text of the image as it appears on the page}
+
+New Image prompt:
+## End
